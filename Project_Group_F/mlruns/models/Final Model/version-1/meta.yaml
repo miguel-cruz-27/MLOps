@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1687735332799
+current_stage: None
+description: ''
+last_updated_timestamp: 1687735332799
+name: Final Model
+run_id: 763439cb593b4da7b1d539fb1790c3d0
+run_link: ''
+source: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/574313614707124715/763439cb593b4da7b1d539fb1790c3d0/artifacts/test_model
+status: READY
+status_message: null
+user_id: null
+version: 1

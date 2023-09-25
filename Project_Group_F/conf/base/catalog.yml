@@ -1,0 +1,219 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+# file configurations for csv files 
+_csv: &csv
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ','
+    header: 0
+    decimal: .
+    index_col: False
+    parse_dates: [reservation_status_date, arrival_date, departure_date]
+  save_args:
+    index: False
+    date_format: '%Y-%m-%d'
+
+# initial datasets
+hotel_raw_data:
+  <<: *csv
+  filepath: data/01_raw/hotel_bookings.csv
+  load_args:
+    parse_dates: [reservation_status_date]
+
+weather_data:
+  <<: *csv
+  filepath: "data/01_raw/Algarve 2015-07-01 to 2017-08-31.csv"
+  load_args:
+    parse_dates: [datetime]
+  
+# combined dataset
+hotel_all_data:
+  <<: *csv
+  filepath: data/02_intermediate/hotel_all_data.csv
+
+# datasets after splitting into training and testing
+train_data:
+  <<: *csv
+  filepath: data/02_intermediate/train_data.csv
+
+test_data:
+  <<: *csv
+  filepath: data/02_intermediate/test_data.csv
+
+# preprocessing datasets
+train_deleted_duplicates:
+  <<: *csv
+  filepath: data/02_intermediate/train_deleted_duplicates.csv
+
+train_fixed_data_types:
+  <<: *csv
+  filepath: data/02_intermediate/train_fixed_data_types.csv
+
+test_fixed_data_types:
+  <<: *csv
+  filepath: data/02_intermediate/test_fixed_data_types.csv  
+
+train_without_incoherences:
+  <<: *csv
+  filepath: data/02_intermediate/train_without_incoherences.csv
+
+train_new_features:
+  <<: *csv
+  filepath: data/02_intermediate/train_new_features.csv
+
+test_new_features:
+  <<: *csv
+  filepath: data/02_intermediate/test_new_features.csv
+
+# lists of the features
+metric_features: 
+  type: pickle.PickleDataSet
+  filepath: data/04_feature/metric_features.pkl
+  backend: pickle
+
+non_metric_features: 
+  type: pickle.PickleDataSet
+  filepath: data/04_feature/non_metric_features.pkl
+  backend: pickle
+
+encoded_non_metric_features: 
+  type: pickle.PickleDataSet
+  filepath: data/04_feature/encoded_non_metric_features.pkl
+  backend: pickle
+
+# preprocessing datasets
+train_cat_joined:
+  <<: *csv
+  filepath: data/02_intermediate/train_cat_joined.csv
+
+test_cat_joined:
+  <<: *csv
+  filepath: data/02_intermediate/test_cat_joined.csv  
+
+train_without_missing:
+  <<: *csv
+  filepath: data/02_intermediate/train_without_missing.csv
+
+test_without_missing:
+  <<: *csv
+  filepath: data/02_intermediate/test_without_missing.csv
+
+train_without_outliers:
+  <<: *csv
+  filepath: data/02_intermediate/train_without_outliers.csv
+
+train_scaled:
+  <<: *csv
+  filepath: data/02_intermediate/train_scaled.csv
+
+test_scaled:
+  <<: *csv
+  filepath: data/02_intermediate/test_scaled.csv
+
+train_encoded:
+  <<: *csv
+  filepath: data/02_intermediate/train_encoded.csv
+  
+test_encoded:
+  <<: *csv
+  filepath: data/02_intermediate/test_encoded.csv
+
+# descriptive statistics of preprocessing datasets
+raw_describe:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: json.JSONDataSet
+    filepath: data/08_reporting/describe_data_raw.json
+
+new_features_describe:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: json.JSONDataSet
+    filepath: data/08_reporting/describe_data_new_features.json
+
+not_scaled_describe:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: json.JSONDataSet
+    filepath: data/08_reporting/describe_data_not_scaled.json
+
+scaled_describe:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: json.JSONDataSet
+    filepath: data/08_reporting/describe_data_scaled.json
+
+# output of the feature selection (list with the best columns)
+best_columns: 
+  type: pickle.PickleDataSet
+  filepath: data/04_feature/best_columns.pkl
+  backend: pickle
+
+# output of the feature selection (dataset only with the best columns)
+train_with_best_columns:
+  <<: *csv
+  filepath: data/04_feature/train_with_best_columns.csv
+  load_args:
+    parse_dates: False
+
+test_with_best_columns:
+  <<: *csv
+  filepath: data/04_feature/test_with_best_columns.csv
+  load_args:
+    parse_dates: False
+
+# data splitted, into test and training and into features and target
+X_train_data:
+  <<: *csv
+  filepath: data/05_model_input/X_train.csv
+  load_args:
+    parse_dates: False
+
+y_train_data:
+  <<: *csv
+  filepath: data/05_model_input/y_train.csv
+  load_args:
+    parse_dates: False
+
+X_test_data:
+  <<: *csv
+  filepath: data/05_model_input/X_test.csv
+  load_args:
+    parse_dates: False
+
+y_test_data:
+  <<: *csv
+  filepath: data/05_model_input/y_test.csv
+  load_args:
+    parse_dates: False
+
+# output of the hyperparametrization stage (model tuned)
+tuned_model:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: pickle.PickleDataSet
+    filepath: data/06_models/tuned_model.pkl
+    backend: pickle
+
+# 
+test_model:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: pickle.PickleDataSet
+    filepath: data/06_models/trained_model.pkl
+    backend: pickle
+
+output_plot:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: matplotlib.MatplotlibWriter
+    filepath: data/08_reporting/shap_plot.png
+
+output_plot_2:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+  data_set:
+    type: matplotlib.MatplotlibWriter
+    filepath: data/08_reporting/shap_bar_plot.png

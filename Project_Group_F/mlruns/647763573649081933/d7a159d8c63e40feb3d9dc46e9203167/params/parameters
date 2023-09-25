@@ -1,0 +1,1 @@
+{'random_state': 7, 'scale_data': 'min_max', 'outlier_removal': 'manual', 'target_column': 'is_canceled', 'feature_selection': 'rfe', 'test_fraction': 0.3, 'with_feature_selection': True, 'search_n_iter': 150, 'run_name': 'minmax_manual_rfe', 'model': 'kneighbors'}

@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/658731760524650778
+creation_time: 1687393091702
+experiment_id: '658731760524650778'
+last_update_time: 1687393091702
+lifecycle_stage: active
+name: random_forest

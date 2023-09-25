@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/574313614707124715/8f4ab83114d84cca991299bd13069f5c/artifacts
+deleted_time: 1687779220197
+end_time: 1687636603924
+entry_point_name: ''
+experiment_id: '574313614707124715'
+lifecycle_stage: deleted
+run_id: 8f4ab83114d84cca991299bd13069f5c
+run_name: predict
+run_uuid: 8f4ab83114d84cca991299bd13069f5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687636603337
+status: 4
+tags: []
+user_id: David

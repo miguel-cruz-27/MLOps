@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/647763573649081933/d48b6edad3db45f194bdc5601f0b2e38/artifacts
+deleted_time: 1687547119087
+end_time: 1687426756346
+entry_point_name: ''
+experiment_id: '647763573649081933'
+lifecycle_stage: deleted
+run_id: d48b6edad3db45f194bdc5601f0b2e38
+run_name: __default__
+run_uuid: d48b6edad3db45f194bdc5601f0b2e38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687426613866
+status: 4
+tags: []
+user_id: migue

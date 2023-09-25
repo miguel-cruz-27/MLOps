@@ -1,0 +1,63 @@
+artifact_path: model
+flavors:
+  lightgbm:
+    code: null
+    data: model.pkl
+    lgb_version: 3.3.5
+    model_class: lightgbm.sklearn.LGBMClassifier
+  python_function:
+    data: model.pkl
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.lightgbm
+    python_version: 3.10.11
+mlflow_version: 2.3.2
+model_uuid: c92ab1ee69384fd797497198d714b49a
+run_id: 3e47a3487157436199f622bb0fd0508e
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  type: dataframe
+signature:
+  inputs: '[{"name": "lead_time", "type": "long"}, {"name": "arrival_date_year", "type":
+    "long"}, {"name": "arrival_date_week_number", "type": "long"}, {"name": "arrival_date_day_of_month",
+    "type": "long"}, {"name": "stays_in_weekend_nights", "type": "long"}, {"name":
+    "stays_in_week_nights", "type": "long"}, {"name": "adults", "type": "long"}, {"name":
+    "children", "type": "long"}, {"name": "babies", "type": "long"}, {"name": "previous_cancellations",
+    "type": "long"}, {"name": "previous_bookings_not_canceled", "type": "long"}, {"name":
+    "booking_changes", "type": "long"}, {"name": "days_in_waiting_list", "type": "long"},
+    {"name": "adr", "type": "double"}, {"name": "required_car_parking_spaces", "type":
+    "long"}, {"name": "total_of_special_requests", "type": "long"}, {"name": "all_children",
+    "type": "long"}, {"name": "adr_pp", "type": "double"}, {"name": "total_nights",
+    "type": "long"}, {"name": "arrival_date_month", "type": "long"}, {"name": "number_holidays",
+    "type": "long"}, {"name": "temp", "type": "double"}, {"name": "precip", "type":
+    "double"}, {"name": "wind_speed", "type": "double"}, {"name": "cloud_cover", "type":
+    "double"}, {"name": "visibility", "type": "double"}, {"name": "arrival_date_month_sin",
+    "type": "double"}, {"name": "arrival_date_month_cos", "type": "double"}, {"name":
+    "ohc_distribution_channel_Direct", "type": "double"}, {"name": "ohc_distribution_channel_TA/TO",
+    "type": "double"}, {"name": "ohc_distribution_channel_Undefined", "type": "double"},
+    {"name": "ohc_deposit_type_Non Refund", "type": "double"}, {"name": "ohc_deposit_type_Refundable",
+    "type": "double"}, {"name": "ohc_reserved_room_type_B", "type": "double"}, {"name":
+    "ohc_reserved_room_type_C", "type": "double"}, {"name": "ohc_reserved_room_type_D",
+    "type": "double"}, {"name": "ohc_reserved_room_type_E", "type": "double"}, {"name":
+    "ohc_reserved_room_type_F", "type": "double"}, {"name": "ohc_reserved_room_type_G",
+    "type": "double"}, {"name": "ohc_reserved_room_type_H", "type": "double"}, {"name":
+    "ohc_reserved_room_type_L", "type": "double"}, {"name": "ohc_customer_type_Group",
+    "type": "double"}, {"name": "ohc_customer_type_Transient", "type": "double"},
+    {"name": "ohc_customer_type_Transient-Party", "type": "double"}, {"name": "ohc_meal_FB",
+    "type": "double"}, {"name": "ohc_meal_HB", "type": "double"}, {"name": "ohc_meal_SC",
+    "type": "double"}, {"name": "ohc_meal_Undefined", "type": "double"}, {"name":
+    "ohc_weekend_or_weekday_Just Weekday", "type": "double"}, {"name": "ohc_weekend_or_weekday_Just
+    Weekend", "type": "double"}, {"name": "ohc_market_segment_Corporate", "type":
+    "double"}, {"name": "ohc_market_segment_Direct", "type": "double"}, {"name": "ohc_market_segment_Groups",
+    "type": "double"}, {"name": "ohc_market_segment_Offline TA/TO", "type": "double"},
+    {"name": "ohc_market_segment_Online TA", "type": "double"}, {"name": "ohc_company_223.0",
+    "type": "double"}, {"name": "ohc_company_281.0", "type": "double"}, {"name": "ohc_company_94.0",
+    "type": "double"}, {"name": "ohc_company_not applicable", "type": "double"}, {"name":
+    "ohc_company_others", "type": "double"}, {"name": "ohc_is_repeated_guest_1", "type":
+    "double"}, {"name": "ohc_agent_241.0", "type": "double"}, {"name": "ohc_agent_250.0",
+    "type": "double"}, {"name": "ohc_agent_40.0", "type": "double"}, {"name": "ohc_agent_not
+    applicable", "type": "double"}, {"name": "ohc_agent_others", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2023-06-23 09:12:50.036612'

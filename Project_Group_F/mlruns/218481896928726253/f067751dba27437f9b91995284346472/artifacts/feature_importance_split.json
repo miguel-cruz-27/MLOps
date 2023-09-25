@@ -1,0 +1,23 @@
+{
+  "lead_time": 295,
+  "arrival_date_year": 47,
+  "adults": 28,
+  "previous_cancellations": 66,
+  "previous_bookings_not_canceled": 48,
+  "booking_changes": 40,
+  "adr": 162,
+  "required_car_parking_spaces": 60,
+  "total_of_special_requests": 84,
+  "all_children": 20,
+  "total_nights": 82,
+  "arrival_date_month": 52,
+  "cloud_cover": 100,
+  "ohc_distribution_channel_Direct": 7,
+  "ohc_deposit_type_Non_Refund": 42,
+  "ohc_customer_type_Transient": 75,
+  "ohc_market_segment_Corporate": 22,
+  "ohc_market_segment_Online_TA": 80,
+  "ohc_company_others": 11,
+  "ohc_agent_241.0": 35,
+  "ohc_agent_others": 31
+}

@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/647763573649081933
+creation_time: 1687426441702
+experiment_id: '647763573649081933'
+last_update_time: 1687426441702
+lifecycle_stage: active
+name: kneighbors

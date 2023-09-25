@@ -1,0 +1,23 @@
+{
+  "lead_time": 11826.39122563763,
+  "arrival_date_year": 990.5458807945251,
+  "adults": 215.07372856140137,
+  "previous_cancellations": 3712.6479967832565,
+  "previous_bookings_not_canceled": 1249.3958501815796,
+  "booking_changes": 1597.702160835266,
+  "adr": 2553.644756823778,
+  "required_car_parking_spaces": 12675.036931037903,
+  "total_of_special_requests": 3724.677321495617,
+  "all_children": 291.00334119796753,
+  "total_nights": 728.2997889518738,
+  "arrival_date_month": 328.38615465164185,
+  "cloud_cover": 687.1505031585693,
+  "ohc_distribution_channel_Direct": 45.75657033920288,
+  "ohc_deposit_type_Non_Refund": 6050.5869908332825,
+  "ohc_customer_type_Transient": 4624.934062004089,
+  "ohc_market_segment_Corporate": 442.5555627346039,
+  "ohc_market_segment_Online_TA": 7475.121208818208,
+  "ohc_company_others": 99.21293020248413,
+  "ohc_agent_241.0": 1543.6715329885483,
+  "ohc_agent_others": 1507.3376598358154
+}

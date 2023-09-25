@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/beatr/OneDrive%20-%20NOVAIMS/1%C2%BA%20ano/Semester%202/Machine%20Learning%20Operations/hotel-project/mlruns/0/cf0297166421472491a914323a8f9d8d/artifacts
+deleted_time: 1687794625684
+end_time: 1687784263290
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: cf0297166421472491a914323a8f9d8d
+run_name: final_model
+run_uuid: cf0297166421472491a914323a8f9d8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687784142036
+status: 3
+tags: []
+user_id: migue

@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/596906527119140929
+creation_time: 1687387309238
+experiment_id: '596906527119140929'
+last_update_time: 1687387309238
+lifecycle_stage: active
+name: logistic_regression

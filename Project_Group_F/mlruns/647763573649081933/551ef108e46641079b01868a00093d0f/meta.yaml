@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/647763573649081933/551ef108e46641079b01868a00093d0f/artifacts
+end_time: 1687457324443
+entry_point_name: ''
+experiment_id: '647763573649081933'
+lifecycle_stage: active
+run_id: 551ef108e46641079b01868a00093d0f
+run_name: minmax_manual_rfe
+run_uuid: 551ef108e46641079b01868a00093d0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687454961217
+status: 3
+tags: []
+user_id: migue

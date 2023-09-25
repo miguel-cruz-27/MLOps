@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/574313614707124715/40fc50a70e964c3096aa95426b4abbc0/artifacts
+deleted_time: 1687779191573
+end_time: 1687649587040
+entry_point_name: ''
+experiment_id: '574313614707124715'
+lifecycle_stage: deleted
+run_id: 40fc50a70e964c3096aa95426b4abbc0
+run_name: drift_test
+run_uuid: 40fc50a70e964c3096aa95426b4abbc0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1687649510295
+status: 3
+tags: []
+user_id: David

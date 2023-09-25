@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/646224595702542727
+creation_time: 1687462818232
+experiment_id: '646224595702542727'
+last_update_time: 1687462818232
+lifecycle_stage: active
+name: xgboost

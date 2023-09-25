@@ -1,0 +1,38 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.3.2
+model_uuid: 463809d26129486f824e18c31ca9cf7a
+run_id: bbec7e5061f84aa6848527f0f651a63c
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  type: dataframe
+signature:
+  inputs: '[{"name": "lead_time", "type": "long"}, {"name": "arrival_date_year", "type":
+    "long"}, {"name": "adults", "type": "long"}, {"name": "previous_cancellations",
+    "type": "long"}, {"name": "previous_bookings_not_canceled", "type": "long"}, {"name":
+    "booking_changes", "type": "long"}, {"name": "adr", "type": "double"}, {"name":
+    "required_car_parking_spaces", "type": "long"}, {"name": "total_of_special_requests",
+    "type": "long"}, {"name": "all_children", "type": "long"}, {"name": "total_nights",
+    "type": "long"}, {"name": "arrival_date_month", "type": "long"}, {"name": "cloud_cover",
+    "type": "double"}, {"name": "ohc_distribution_channel_Direct", "type": "double"},
+    {"name": "ohc_deposit_type_Non Refund", "type": "double"}, {"name": "ohc_customer_type_Transient",
+    "type": "double"}, {"name": "ohc_market_segment_Corporate", "type": "double"},
+    {"name": "ohc_market_segment_Online TA", "type": "double"}, {"name": "ohc_company_others",
+    "type": "double"}, {"name": "ohc_agent_241.0", "type": "double"}, {"name": "ohc_agent_others",
+    "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2023-06-23 01:29:17.843141'

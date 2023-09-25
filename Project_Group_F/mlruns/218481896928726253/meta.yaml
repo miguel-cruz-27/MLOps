@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/migue/Desktop/IMS/MLOps/Projeto/hotel-project/mlruns/218481896928726253
+creation_time: 1687388550451
+experiment_id: '218481896928726253'
+last_update_time: 1687388550451
+lifecycle_stage: active
+name: lgbm
